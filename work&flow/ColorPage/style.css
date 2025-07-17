@@ -1,0 +1,165 @@
+/* خلفية كاملة */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('axp-photography-zLvzUaZrkgc-unsplash.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* المربع البلوري اللي ما بياخد كل الشاشة */
+.page-wrapper {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* قلب المحتوى بلوري وفيه حواف */
+.page-container {
+  backdrop-filter: blur(15px);
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 20px;
+  overflow-y: auto;
+  max-height: 90vh;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+/* العنوان */
+.title {
+  text-align: center;
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+/* الحاوية لكل البوردات */
+.palette-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* بورد واحد */
+.palette {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  padding: 8px 120px;
+  backdrop-filter: blur(68px);
+}
+
+/* ألوان داخليًا */
+.colors {
+  display: flex;
+  flex: 1;
+  gap: 3px;
+}
+
+/* كل مربع لون */
+.color-box {
+  flex: 1;
+  height: 60px;
+  border-radius: 4px;
+  transition: transform 0.6s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.color-box:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* checkbox على اليسار */
+.checkbox-container {
+  margin-right: 7px;
+}
+
+/* زر السبمت */
+.glass-container {
+  background: rgba(255, 255, 255, 0.236); 
+  border-radius: 16px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.435); 
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  overflow-y: auto;
+  max-height: 90vh;
+  position: relative;
+}
+
+#submitButton {
+  margin-top: 30px;        /* مسافة للأسفل */
+  display: block;          /* عشان ياخد عرض حسب المحتوى */
+  margin-left: auto;
+  margin-right: auto;      /* توسيط الزر */
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#submitButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+#submitButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+#submitButton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* إخفاء شكل السكروول بدون تعطيله */
+.page-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.page-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.page-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1); /* شبه شفاف */
+  border-radius: 10px;
+}
+
+.page-container:hover::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3); /* يظهر شوي عند المرور */
+}
+
+/* لمتصفحات غير كروم */
+.page-container {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
+}
+#mainTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
