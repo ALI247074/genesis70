@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Type Selector</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Intro Message -->
+    <div class="footer-message">
+      This page helps you define your request type
+    </div>
+
+    <!-- Step 1 -->
+    <div class="step active" id="step1">
+      <div class="glass-box">
+        <h2>Select Project Type</h2>
+        <select id="projectType" required>
+          <option value="" disabled selected>Select a type</option>
+          <option value="Large Project">Large Project</option>
+          <option value="Medium Project">Medium Project</option>
+          <option value="Small Project">Small Project</option>
+        </select>
+        <div class="buttons">
+          <button id="next1" disabled>Next</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 2 -->
+    <!-- Step 2 -->
+<div class="step" id="step2">
+ <div class="glass-box">
+  <h2>Select Project Details</h2>
+  <div class="options-grid" id="detailsOptions">
+   <label><input type="checkbox" value="Single Landing Page" /> Single Landing Page</label>
+  <label><input type="checkbox" value="Multi-Section Homepage" /> Multi-Pages Website</label>
+  <label><input type="checkbox" value="Portfolio Display" /> Portfolio Display</label>
+  <label><input type="checkbox" value="Custom Contact Form" /> Custom Contact Form</label>
+</div>
+  <div class="buttons">
+   <button id="back2">Back</button>
+   <button id="next2">Next</button>
+  </div>
+ </div>
+</div>
+
+<!-- Step 3 -->
+<div class="step" id="step3">
+ <div class="glass-box">
+  <h2>Select Add-ons</h2>
+  <div class="options-grid" id="addonsOptions">
+   <label><input type="checkbox" value="Luxury Design (Premium Aesthetic)" /> Luxury Design (Premium Aesthetic)</label>
+  <label><input type="checkbox" value="Minimalistic & Clean" /> Minimalistic & Clean</label>
+  <label><input type="checkbox" value="Artistic & Bold Style" /> Artistic & Bold Style</label>
+</div>
+  <div class="buttons">
+   <button id="back3">Back</button>
+   <button id="submit">Next</button>
+  </div>
+ </div>
+</div>
+
+<!-- Step 4 -->
+<div id="step4" class="step glass-box">
+ <h2>Date of Project</h2>
+ <div class="options-grid">
+  <label><input type="checkbox" id="customOption1" value="Priority Start (within 1-2 week) " /> Priority Start (within 1 week) [simple proj]</label>
+  <label><input type="checkbox" id="customOption2" value="Standard Start (within 2–3 weeks)" /> Standard Start (within 2–3 weeks)</label>
+  <label><input type="checkbox" id="customOption3" value="Flexible Start (within 1–2 months)" /> Flexible Start (within 1–2 months)</label>
+</div>
+ <div class="buttons">
+  <button id="back4">Back</button>
+  <button id="next4">Next</button>
+ </div>
+</div>
+
+
+
+<!-- Step 5 -->
+<div id="step5" class="step glass-box">
+  <h2>Color Page</h2>
+  
+  <h3>take a screenshot for result in the color page and send it separately with the final results.</h3>
+
+  <button id="backToStep4Btn">Back</button>
+  <a href="..\work-and-flow\Color-Page\home.html" class="btn">Go to the color page</a>
+  <button id="nextToSummaryBtn">Next</button>
+  
+</div>
+
+
+    <div id="finalStep" class="step glass-box">
+  <h2>Summary</h2>
+  <ul id="summaryList"></ul>
+  <div class="color-note-container">
+  <textarea placeholder="Paste your selection color"></textarea>
+</div>
+  <div class="buttons" style="justify-content: flex-start;">
+    <button id="backFinal">Back</button>
+    <div class="screenshot-box">
+      
+  <img src="https://cdn-icons-png.flaticon.com/512/4538/4538560.png" alt="Camera Icon" class="camera-icon">
+ 
+</div>
+    <div class="screenshot-alert">
+   Please take a screenshot of this result and send it to designer <span class="gold-gradient-glow">"𝗚𝗘𝗡𝗘𝗦𝗜𝗦"</span>
+</div>
+ 
+</div>
+  </div>
+</div>
+
+    
+  </div>
+   <body>
+   <button id="backBtn" class="glass-button" onclick="../home.html">
+  &#8592; <!-- سهم رجوع ← -->
+</button>
+    
+<div class="corner-box">
+  <p class="logo">Genesis for Designing</p>
+  
+</div>    
+
+  <script src="script.js"></script>
+  <script>
+  document.getElementById("backBtn").addEventListener("click", function (e) {
+    e.preventDefault();
+    // بدل الرابط حسب المكان اللي بدك ترجع عليه
+    window.location.href = "../index.html"; 
+  });
+</script>
+  
+</body>
+</html>
